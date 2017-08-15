@@ -1,0 +1,192 @@
+.clearfix {
+    zoom: 1;
+}
+.clearfix:before,.clearfix:after {
+    display: table;
+    line-height: 0;
+    content: "";
+}
+.clearfix:after {
+    clear: both;
+}
+.hover>a{
+    color:#fff;
+    background:#723c8e;
+}
+.header{
+
+}
+.header .header_top{
+    padding: 30px 0;
+}
+.header .header_top .logo{
+    float:left;
+    margin-left:12px;
+    width:356px;
+}
+.header .header_top .logo .logoImg{
+    float:left;
+}
+.header .header_top .logo .logoImg img{}
+.header .header_top .logo .logoWords{
+    float:left;
+    margin:2px 0 2px 24px;
+    padding:10px 0 10px 20px;
+    border-left:1px solid #d6d6d6;
+}
+.header .header_top .logo .logoWords h3{
+    font:normal bold 26px/26px "微软雅黑";
+    color:#723c8e;
+}
+.header .header_top .logo .logoWords p{
+    margin-top:10px;
+    font:normal bold 14px/14px "微软雅黑";
+}
+.header .header_top .servicePhone{
+    float:right;
+}
+.header .header_top .servicePhone .phoneImg{
+    float:left;
+    margin:22px 8px 18px 0;
+}
+.header .header_top .servicePhone .phoneImg img{}
+.header .header_top .servicePhone .phoneWords{
+    float:left;
+    margin-top:20px;
+}
+.header .header_top .servicePhone .phoneWords h5{
+    font:normal normal 14px/14px "微软雅黑";
+}
+.header .header_top .servicePhone .phoneWords p{
+    margin-top:4px;
+    font:normal normal 26px/26px "微软雅黑";
+    color:#723c8e;
+}
+.header .header_bottom{
+    border-top:1px solid #e5e5e5;
+}
+.header .header_bottom .navbar{
+    padding-left:24px;
+    border:none;
+    margin-bottom:0;
+    min-height:0;
+}
+.header .header_bottom .navbar .navbar-toggle span{
+    background:#fff;
+}
+
+.header .header_bottom .navbar .navbar-collapse>ul>li{
+    float:left;
+    margin:0 8px;
+    position:relative;
+}
+.header .header_bottom .navbar .navbar-collapse>ul>li>a{
+    display:block;
+    padding:16px 16px;
+    text-align: center;
+    font:normal normal 16px/16px "微软雅黑";
+}
+
+.header .header_bottom .navbar .navbar-collapse>ul>li .selebox{
+    width:100%;
+    display:none;
+    position:absolute;
+    padding-top:6px;
+    z-index:100;
+
+}
+.header .header_bottom .navbar .navbar-collapse>ul>li .selebox ul{
+    background:#333;
+    padding-bottom:6px;
+}
+.header .header_bottom .navbar .navbar-collapse>ul>li .selebox ul>li{
+    width:100%;
+}
+.header .header_bottom .navbar .navbar-collapse>ul>li .selebox ul>li>a{
+    width:100%;
+    display:block;
+    padding-left:18px;
+    height:34px;
+    font:normal normal 14px/34px "微软雅黑";
+    color:#acacac;
+}
+.header .header_bottom .navbar .navbar-collapse>ul>li .selebox ul>li>a:hover{
+    color:#e9e9e9;
+    background:#0a0a0a;
+}
+.page{}
+.page .carouselban{
+    width:100%;
+    background:#874da6;
+}
+.page .banner{
+    position:relative;
+}
+.page .banner .banner-indicators{
+    position:absolute;
+    bottom:10%;
+    left:50%;
+    transform:translateX(-50%);
+    z-index:100;
+}
+.page .banner .banner-indicators li{
+    float:left;
+    margin-left:16px;
+    height:18px;
+    width:18px;
+    border:1px solid #f3e7f8;
+    border-radius: 8px;
+}
+.page .banner .banner-indicators .active{
+    background:#f3e7f8;
+}
+.page .banner .banner-inner{}
+.page .banner .banner-inner .item{
+    display:none;
+    opacity:0;
+}
+.page .banner .banner-inner .active{
+    display:block;
+}
+.page .banner .banner-inner .item img{
+    width:100%;
+}
+.page .banner .banner-controls{
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+}
+.page .banner .left{
+    left:0;
+}
+.page .banner .right{
+    right:0;
+}
+.page .banner .banner-controls img{}
+
+
+
+
+@media(max-width: 768px){
+    .header .header_top .logo{
+        float:none;
+        margin:0 auto;
+    }
+    .header .header_bottom .navbar{
+        background:#723c8e;
+    }
+    .header .header_bottom .navbar .navbar-collapse{
+        background:#fff;
+        margin:0 auto;
+        width:80%;
+    }
+    .header .header_bottom .navbar .navbar-toggle{
+
+    }
+    .header .header_bottom .navbar .navbar-collapse>ul>li{
+        float:none;
+    }
+    .header .header_bottom .navbar .navbar-collapse>ul>li .selebox{
+        position:static;
+    }
+}
